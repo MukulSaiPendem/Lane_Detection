@@ -1,0 +1,69 @@
+{
+    "start_time": "2024-12-08T19:43:19.985034",
+    "end_time": "2024-12-08T19:51:11.428754",
+    "metrics": [
+        {
+            "timestamp": "2024-12-08T19:44:26.832238",
+            "rank": 0,
+            "step": 16,
+            "loss": 0.13791966438293457,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 63.02953886985779
+        },
+        {
+            "timestamp": "2024-12-08T19:45:27.649215",
+            "rank": 0,
+            "step": 31,
+            "loss": 0.10146421939134598,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 123.86078429222107
+        },
+        {
+            "timestamp": "2024-12-08T19:46:29.520501",
+            "rank": 0,
+            "step": 46,
+            "loss": 0.1036134734749794,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 185.70860266685486
+        },
+        {
+            "timestamp": "2024-12-08T19:47:33.758632",
+            "rank": 0,
+            "step": 61,
+            "loss": 0.09683346748352051,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 249.92556309700012
+        },
+        {
+            "timestamp": "2024-12-08T19:48:37.015970",
+            "rank": 0,
+            "step": 76,
+            "loss": 0.08921238780021667,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 313.0738708972931
+        },
+        {
+            "timestamp": "2024-12-08T19:49:41.136819",
+            "rank": 0,
+            "step": 91,
+            "loss": 0.08322003483772278,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 377.31190061569214
+        },
+        {
+            "timestamp": "2024-12-08T19:50:44.010549",
+            "rank": 0,
+            "step": 106,
+            "loss": 0.06499318778514862,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 440.158185005188
+        }
+    ]
+}

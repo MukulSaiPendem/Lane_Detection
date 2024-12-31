@@ -1,0 +1,60 @@
+{
+    "start_time": "2024-12-08T19:35:29.647739",
+    "end_time": "2024-12-08T19:41:42.218029",
+    "metrics": [
+        {
+            "timestamp": "2024-12-08T19:36:34.134166",
+            "rank": 0,
+            "step": 19,
+            "loss": 0.13383349776268005,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 61.67890763282776
+        },
+        {
+            "timestamp": "2024-12-08T19:37:34.515408",
+            "rank": 0,
+            "step": 37,
+            "loss": 0.10664858669042587,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 121.82222843170166
+        },
+        {
+            "timestamp": "2024-12-08T19:38:36.323039",
+            "rank": 0,
+            "step": 56,
+            "loss": 0.09407413750886917,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 183.55391883850098
+        },
+        {
+            "timestamp": "2024-12-08T19:39:39.491002",
+            "rank": 0,
+            "step": 75,
+            "loss": 0.08170437812805176,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 246.83196640014648
+        },
+        {
+            "timestamp": "2024-12-08T19:40:41.850320",
+            "rank": 0,
+            "step": 94,
+            "loss": 0.062015701085329056,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 309.2202732563019
+        },
+        {
+            "timestamp": "2024-12-08T19:41:42.217160",
+            "rank": 0,
+            "step": 113,
+            "loss": 0.06583601981401443,
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "elapsed_time": 371.3627851009369
+        }
+    ]
+}

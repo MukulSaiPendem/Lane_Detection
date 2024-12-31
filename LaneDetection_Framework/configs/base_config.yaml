@@ -1,0 +1,34 @@
+# Base configuration for TuSimple Lane Detection
+
+# Dataset Configuration
+dataset:
+  path: '/home/rebbapragada.s/.cache/kagglehub/datasets/manideep1108/tusimple/versions/5/TUSimple'
+  image_size: [800, 360]
+  batch_size: 32
+  num_workers: 32
+
+# Model Configuration
+model:
+  name: 'LaneDetectionModel'
+  num_classes: 2
+  backbone: 'resnet18'
+  pretrained: true
+
+# Training Configuration
+training:
+  epochs: 1
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: 'adamw'
+
+# System Configuration
+system:
+  device: 'auto'  # 'auto', 'cpu', or 'cuda'
+  precision: 'float32'  # 'float32' or 'float16'
+  
+# Logging Configuration
+logging:
+  log_dir: './logs'
+  checkpoint_dir: './checkpoints'
+  save_frequency: 1
+  metrics_file: 'metrics.csv'

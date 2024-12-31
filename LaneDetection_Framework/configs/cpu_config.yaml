@@ -1,0 +1,16 @@
+# CPU-specific configuration for TuSimple Lane Detection
+
+defaults:
+  - base_config
+
+system:
+  device: 'cpu'
+  num_threads: 4
+  pin_memory: false
+  
+training:
+  batch_size: 4  # Reduced batch size for CPU
+  
+optimization:
+  memory_efficient: true
+  cudnn_benchmark: false

@@ -1,0 +1,48 @@
+name: hpc-tusimple
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.8
+  - pip=21.3.1
+
+  # Deep Learning
+  - pytorch=1.11.0
+  - torchvision=0.12.0
+  - cudatoolkit=11.8
+
+  # Data Processing
+  - numpy=1.22.3
+  - pandas=1.4.2
+  - pillow=9.0.1
+  - opencv=4.5.5
+  - dask=2022.4.1
+  - distributed=2022.4.1
+
+  # Visualization
+  - matplotlib=3.5.1
+  - seaborn=0.11.2
+
+  # Utilities
+  - pyyaml=6.0
+  - tqdm=4.64.0
+  - psutil=5.9.0
+  - gputil=1.4.0
+  - kaggle=1.5.12
+
+  # Development Tools
+  - jupyter=1.0.0
+  - ipython=8.2.0
+  - black=22.3.0
+  - flake8=4.0.1
+  - pytest=7.1.1
+
+  # Additional pip packages
+  - pip:
+    - kagglehub==0.1.0
+    - tensorboard==2.8.0
+    - albumentations==1.1.0
+

@@ -1,0 +1,39 @@
+# GPU-specific configuration for TuSimple Lane Detection
+
+defaults:
+  - base_config
+dataset:
+  path: '/home/rebbapragada.s/.cache/kagglehub/datasets/manideep1108/tusimple/versions/5/TUSimple'
+  image_size: [800, 360]
+  batch_size: 8
+  num_workers: 4
+
+model:
+  name: 'LaneDetectionModel'
+  num_classes: 2
+  backbone: 'resnet18'
+  pretrained: true
+
+system:
+  device: 'cuda'
+  cuda_devices: [0]  # List of GPU indices to use
+  pin_memory: true
+  
+training:
+  epochs: 1
+  batch_size: 64  # Increased batch size for GPU
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: 'adamw'
+  
+optimization:
+  memory_efficient: true
+  cudnn_benchmark: true
+  mixed_precision: false
+
+# Logging Configuration
+logging:
+  log_dir: './logs'
+  checkpoint_dir: './checkpoints'
+  save_frequency: 1
+  metrics_file: 'metrics.csv'

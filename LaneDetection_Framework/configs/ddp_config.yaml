@@ -1,0 +1,52 @@
+# Dataset Configuration
+dataset:
+  path: '/home/rebbapragada.s/.cache/kagglehub/datasets/manideep1108/tusimple/versions/5/TUSimple'  # Update with your dataset path
+  image_size: [800, 360]
+  batch_size: 8  # Total batch size across all GPUs
+  num_workers: 4  # Per GPU
+
+# Model Configuration
+model:
+  name: 'LaneDetectionModel'
+  num_classes: 2
+  backbone: 'resnet18'
+  pretrained: true
+
+# Training Configuration
+training:
+  epochs: 1
+  learning_rate: 0.0005  # Base learning rate
+  weight_decay: 0.0001
+  optimizer: 'adamw'
+
+# System Configuration
+system:
+  device: 'cuda'
+  cuda_devices: [0, 1]  # List all GPUs to use
+  pin_memory: false
+
+# DDP Specific Configuration
+distributed:
+  backend: 'nccl'  # Use 'nccl' for GPU, 'gloo' for CPU
+  init_method: 'env://'
+  world_size: 4  # Number of GPUs
+  sync_bn: true  # Synchronize batch normalization
+  find_unused_parameters: false
+
+# Optimization Configuration
+optimization:
+  cudnn_benchmark: false
+  mixed_precision: false
+  memory_efficient: true
+  gradient_accumulation: 2
+  gradient_clip: 0.5
+  scale_learning_rate: true  # Scale learning rate with number of GPUs
+
+
+# Logging Configuration
+logging:
+  log_dir: './logs/ddp'
+  checkpoint_dir: './checkpoints/ddp'
+  save_frequency: 1
+  metrics_file: 'ddp_metrics.json'
+  save_per_rank: false  # Whether to save checkpoints for each rank
